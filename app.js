@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:5177", "http://localhost:5176", "http://localhost:5175", "http://localhost:5174", "https://game-vue-kappa.vercel.app/"], 
+    origin: ["http://localhost:5177", "http://localhost:5176", "http://localhost:5175", "http://localhost:5174", "https://game-vue-kappa.vercel.app"], 
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));

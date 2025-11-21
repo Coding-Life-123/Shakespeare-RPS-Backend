@@ -3,6 +3,6 @@ import { translate } from "../controllers/shakespeareControllers.js";
 
 const router = Router();
 
-router.get("/translate", translate);
+router.post("/translate", translate);
 
 export default router;

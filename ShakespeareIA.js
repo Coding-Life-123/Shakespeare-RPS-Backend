@@ -32,7 +32,7 @@ async function pedirTraduccion(texto = "me pica el culo"){
             ],
         })
         console.log(result.response.candidates[0].content.parts[0].text);
-        return result;
+        return {"translated": result.response.candidates[0].content.parts[0].text};
     }catch(error){
         if(error.res && [401, 403, 429].includes(error.res.status)){
             console.warn(`error con la key actual (${error.res.status}). Cambiando a nueva key...`);
